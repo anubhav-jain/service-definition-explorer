@@ -1,16 +1,52 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <script src="./src/index.js"></script>
+  </head>
 
-<head>
-	<title>Parcel Sandbox</title>
-	<meta charset="UTF-8" />
-</head>
+  <body>
+    <h1>CCE Slackbot Service Explorer</h1>
+    <button id="createTeam">Create Team</button>
+    <button id="createScript">Create Script</button>
+    <button id="addSchedule">Add Schedule</button>
+    <button id="removeSchedule">Remove Schedule</button>
 
-<body>
-	<div id="app"></div>
+    <br /><br /><br /><br /><br />
 
-	<script src="src/index.js">
-	</script>
-</body>
+    <div>
+      <textarea id="serviceDef" name="serviceDef" rows="4" cols="50">
+      </textarea>
+      <br />
+      <button id="copy">Copy text</button>
+    </div>
 
+    <dialog id="addTeamModal">
+      <form method="dialog">
+        <p>
+          <label
+            >Team Name:
+            <input type="text" id="teamName" />
+          </label>
+        </p>
+        <p>
+          <label
+            >Cloud Name:
+            <input type="text" id="cloudName" />
+          </label>
+        </p>
+        <p>
+          <label
+            >Type:
+            <input type="text" id="type" />
+          </label>
+        </p>
+        <menu>
+          <button value="cancel">Cancel</button>
+          <button id="confirmBtn" value="default">Confirm</button>
+        </menu>
+      </form>
+    </dialog>
+  </body>
 </html>

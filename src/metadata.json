@@ -1,0 +1,92 @@
+{
+  "team": [
+    {
+      "name": "black",
+      "cloud": "hue",
+      "type": "primary"
+    },
+    {
+      "name": "blue",
+      "cloud": "hue",
+      "type": "primary"
+    },
+    {
+      "name": "gold",
+      "cloud": "hue",
+      "type": "primary"
+    },
+    {
+      "name": "yellow",
+      "cloud": "hue",
+      "type": "primary"
+    }
+  ],
+  "scripts": [
+    {
+      "name": "slaChecker"
+    },
+    {
+      "name": "scrumMaster"
+    },
+    {
+      "name": "halfLife"
+    },
+    {
+      "name": "ADCalert"
+    }
+  ],
+  "teamscripts": [
+    {
+      "teamname": "black",
+      "scripts": [
+        {
+          "name": "slaChecker",
+          "schedule": "* * * * *"
+        },
+        {
+          "name": "scrumMaster",
+          "schedule": "* * * * */2"
+        }
+      ]
+    },
+    {
+      "teamname": "black",
+      "scripts": [
+        {
+          "name": "slaChecker",
+          "schedule": "* * * * *"
+        },
+        {
+          "name": "halfLife",
+          "schedule": "* * * * */2"
+        }
+      ]
+    },
+    {
+      "teamname": "gold",
+      "scripts": [
+        {
+          "name": "ADCalert",
+          "schedule": "* * * * *"
+        },
+        {
+          "name": "scrumMaster",
+          "schedule": "* * * * */2"
+        }
+      ]
+    },
+    {
+      "teamname": "yellow",
+      "scripts": [
+        {
+          "name": "scrumMaster",
+          "schedule": "* * * * *"
+        },
+        {
+          "name": "halfLife",
+          "schedule": "* * * * */2"
+        }
+      ]
+    }
+  ]
+}
