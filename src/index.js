@@ -24,4 +24,12 @@ teamModalLocator.addEventListener("close", function () {
   console.log(document.getElementById("teamName").value);
   console.log(document.getElementById("cloudName").value);
   console.log(document.getElementById("type").value);
+  var teamBlock = {
+    "name": document.getElementById("teamName").value,
+    "cloud": document.getElementById("cloudName").value,
+    "type": document.getElementById("type").value
+  };
+  json.team.push(teamBlock);
+  //console.log(JSON.stringify(json.team));
+  document.getElementById("serviceDef").value = JSON.stringify(json);
 });
